@@ -71,7 +71,7 @@ public class RequestUtils {
                 if (sslO != null) {
                     request.setAttribute(SSLSupport.CIPHER_SUITE_KEY, sslO);
                 }
-                sslO = sslSupport.getPeerCertificateChain(false);
+                sslO = sslSupport.getPeerCertificates(false);
                 if (sslO != null) {
                     request.setAttribute(SSLSupport.CERTIFICATE_KEY, sslO);
                 }
